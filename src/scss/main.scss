@@ -9,3 +9,15 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+.main{
+  width: 100%;
+  background: $black;
+}
+.header{
+  width: 100%;
+  @include center;
+  padding: 30px;
+  &__title{
+    color: $white;
+  }
+}
