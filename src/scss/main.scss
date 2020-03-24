@@ -4,6 +4,7 @@
 
 html {
   box-sizing: border-box;
+  background: $black;
 }
 
 *, *:before, *:after {
@@ -11,7 +12,6 @@ html {
 }
 .main{
   width: 100%;
-  background: $black;
 }
 .header{
   width: 100%;
@@ -19,5 +19,55 @@ html {
   padding: 30px;
   &__title{
     color: $white;
+  }
+}
+.note{
+  width: 100%;
+  color: $white;
+  @include center;
+  flex-direction: column;
+  padding: 20px;
+  &__title{
+    width: 70vw;
+    margin-bottom: 40px;
+    &--text{
+      width: 100%;
+    }
+    &--input{
+      width: 100%;
+      height: 5vh;
+      font-size: 1.2em;
+      // background: none;
+      // border: none;
+      // border-bottom: 3px solid $white;
+      // color: $white;
+    }   
+  }
+  &__about{
+    width: 70vw;
+    &--textarea{
+      width: 100%;
+      height: 40vh;
+      font-size: 1.2em;
+      // background: $green;
+      // border-bottom: 3px solid $white;
+    }
+  }
+}
+.end{
+  width: 100%;
+  @include center;
+  padding: 40px;
+  &__box{
+    width: 200px;
+    @include center;
+    &--icon{
+      width: 60px;
+      height: 60px;
+      &-img{
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
