@@ -37,10 +37,6 @@ html {
       width: 100%;
       height: 5vh;
       font-size: 1.2em;
-      // background: none;
-      // border: none;
-      // border-bottom: 3px solid $white;
-      // color: $white;
     }   
   }
   &__about{
@@ -49,8 +45,6 @@ html {
       width: 100%;
       height: 40vh;
       font-size: 1.2em;
-      // background: $green;
-      // border-bottom: 3px solid $white;
     }
   }
 }
@@ -67,6 +61,24 @@ html {
       &-img{
         width: 100%;
         height: 100%;
+      }
+    }
+  }
+}
+@media(min-width: 900px){
+  .header{
+    &__title{
+      font-size: 2.4em;
+    }
+  }
+  .note{
+    &__title{
+      width: 60vw;
+    }
+    &__about{
+      width: 60vw;
+      &--textarea{
+        height: 60vh;
       }
     }
   }
