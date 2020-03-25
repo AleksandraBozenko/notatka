@@ -5,6 +5,7 @@
 html {
   box-sizing: border-box;
   background: $black;
+  font-family: 'Neuton', serif;
 }
 
 *, *:before, *:after {
@@ -74,11 +75,17 @@ html {
   .note{
     &__title{
       width: 60vw;
+      &--text{
+        font-size: 1.4em;
+      }
     }
     &__about{
       width: 60vw;
       &--textarea{
         height: 60vh;
+      }
+      &--text{
+        font-size: 1.4em;
       }
     }
   }
