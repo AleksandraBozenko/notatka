@@ -14,9 +14,26 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-// Niżej możesz pisać.
+// Saving without button
 
+// const note = document.querySelector('.note__about--textarea-js');
 
-console.log(`Hello world!`);
+// note.addEventListener('keyup', (e) =>{
+//   localStorage.setItem('note', e.target.value);
+// })
+// if (localStorage.getItem('note')){
+//   note.value = localStorage.getItem('note');
+// }
 
+// Saving with button
 
+const note = document.querySelector('.note__about--textarea-js');
+const save = document.querySelector('.end__box--icon-js');
+
+save.addEventListener('click', (e) =>{
+  localStorage.setItem('note', note.value);
+})
+
+if (localStorage.getItem('note')){
+  note.value = localStorage.getItem('note');
+}
