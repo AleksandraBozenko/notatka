@@ -4,7 +4,7 @@
 
 html {
   box-sizing: border-box;
-  background: $black;
+  background: $blue;
   font-family: 'Neuton', serif;
 }
 
@@ -64,6 +64,18 @@ html {
         height: 100%;
       }
     }
+    &--button{
+      background: $white;
+      border: none;
+      width: 100px;
+      display: none;
+      &-text{
+      color: $blue;
+      font-size: 1.1em;
+      font-weight: bold;
+      letter-spacing: 1px;
+      }
+    }
   }
 }
 @media(min-width: 900px){
@@ -86,6 +98,16 @@ html {
       }
       &--text{
         font-size: 1.4em;
+      }
+    }
+  }
+  .end{
+    &__box{
+      &--button{
+        display: block;
+      }
+      &--icon{
+        display: none;
       }
     }
   }
