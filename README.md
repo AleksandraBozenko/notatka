@@ -1,4 +1,3 @@
-![Notatka screenshot](github/notatka.jpg)
 # Notatka
 
 ## What I used
