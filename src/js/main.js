@@ -14,7 +14,7 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-// Saving without button
+// Save without button
 
 // const note = document.querySelector('.note__about--textarea-js');
 
@@ -25,14 +25,21 @@ if ('serviceWorker' in navigator) {
 //   note.value = localStorage.getItem('note');
 // }
 
-// Saving with button
+// Save & remove with button
 
 const note = document.querySelector('.note__about--textarea-js');
-const save = document.querySelector('.end__box--button-js');
+const save = document.querySelector('.end__box--save-js');
+const remove = document.querySelector('.end__box--delete-js');
+
 
 save.addEventListener('click', (e) =>{
   localStorage.setItem('note', note.value);
-  save.classList.toggle('end__box--button-js');
+  save.classList.toggle('end__box--save-js');
+})
+
+remove.addEventListener('click', (e) =>{
+  localStorage.removeItem('note', note.value);
+  remove.classList.toggle('end__box--delete-js');
 })
 
 if (localStorage.getItem('note')){
