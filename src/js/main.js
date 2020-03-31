@@ -40,6 +40,7 @@ save.addEventListener('click', (e) =>{
 remove.addEventListener('click', (e) =>{
   localStorage.removeItem('note', note.value);
   remove.classList.toggle('end__box--delete-js');
+  note.value ='';
 })
 
 if (localStorage.getItem('note')){
