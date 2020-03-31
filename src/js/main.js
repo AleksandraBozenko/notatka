@@ -28,10 +28,11 @@ if ('serviceWorker' in navigator) {
 // Saving with button
 
 const note = document.querySelector('.note__about--textarea-js');
-const save = document.querySelector('.end__box--icon-js');
+const save = document.querySelector('.end__box--button-js');
 
 save.addEventListener('click', (e) =>{
   localStorage.setItem('note', note.value);
+  save.classList.toggle('end__box--button-js');
 })
 
 if (localStorage.getItem('note')){
