@@ -1,4 +1,13 @@
-# GULP STARTER PACK BY Maciej Korsan & Kacper Kawczak
+# Notatka
+
+## What I used
+
+HTML5, SCSS, JavaScript
+
+## How to run my site locally
+
+
+To run my site locally follow the instructions below:
 
 `npm install`
 
